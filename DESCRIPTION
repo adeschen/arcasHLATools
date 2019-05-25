@@ -1,13 +1,12 @@
 Package: arcasHLATools
 Version: 0.99.0
-Date: 2015-05-01
-Title: Detection of consensus regions inside a group of experiences using
-    genomic positions and genomic ranges
+Date: 2019-05-20
+Title: Tools to easy the extraction and manipulation of HLA typing produced by
+    arcasHLA software
 Description: This package offers tools to easy the extraction of the HLA
     typing from JSON files produced by arcasHLA software.
 Authors@R: c(person("Astrid", "Deschenes", email="adeschen@hotmail.com", 
-    role=c("cre","aut")), person("Fabien Claude", "Lamaze", 
-    email="fabien.lamaze.1@ulaval.ca", role=c("ctb")),
+    role=c("cre","aut")), 
     person("Pascal", "Belleau", email="pascal_belleau@hotmail.com",
     role=c("aut")))
 Depends:
