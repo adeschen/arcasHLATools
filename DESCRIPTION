@@ -1,7 +1,7 @@
 Package: arcasHLATools
 Version: 0.99.0
 Date: 2019-05-20
-Title: Tools to easy the extraction and manipulation of HLA typing produced by
+Title: Tools to ease the extraction and manipulation of HLA typing produced by
     arcasHLA software
 Description: This package offers tools to easy the extraction of the HLA
     typing from JSON files produced by arcasHLA software.
