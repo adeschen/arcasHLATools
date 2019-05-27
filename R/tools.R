@@ -32,7 +32,7 @@
 #' @importFrom dplyr bind_rows
 #' @export
 readAllArcasHLAGenotypefromDir <- function(directory_path, prefix = "",
-                              suffix = ".genotype.json", recursive = FALSE) {
+                                suffix = ".genotype.json", recursive = FALSE) {
     # Parameters validation
     if (!file.exists(directory_path)) {
         e <- file.info(directory_path)
@@ -67,13 +67,13 @@ readAllArcasHLAGenotypefromDir <- function(directory_path, prefix = "",
                                 recursive = recursive,
                                 ignore.case = FALSE, include.dirs = FALSE,
                                 no.. = FALSE)
-   results <- list()
-   for(fileInfo in filesList) {
-       typing <- readOneArcasHLAGenotypeFile(fileInfo)
-       results[[rownames(typing)]] <- typing
-   }
+    results <- list()
+    for(fileInfo in filesList) {
+        typing <- readOneArcasHLAGenotypeFile(fileInfo)
+        results[[rownames(typing)]] <- typing
+    }
 
-   return(bind_rows(results, .id = "Name"))
+    return(bind_rows(results, .id = "Name"))
 }
 
 #' @title Extract all HLA typing from one genotypes json file
