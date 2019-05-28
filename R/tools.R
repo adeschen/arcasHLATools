@@ -73,7 +73,7 @@ readAllArcasHLAGenotypefromDir <- function(directory_path, prefix = "",
         results[[rownames(typing)]] <- typing
     }
 
-    return(bind_rows(results, .id = "Name"))
+    return(bind_rows(results, .id = "Sample"))
 }
 
 #' @title Extract all HLA typing from one genotypes json file
